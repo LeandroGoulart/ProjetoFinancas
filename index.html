@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu App de Clima e Finanças</title>
-  </head>
-  <body>
-     <div id="root"></div>
-      <link rel="stylesheet" type="text/css" href="./src/styles/reset.css">
-      <link rel="stylesheet" type="text/css" href="./src/styles/styles.css">
-      <script type="module" src="./src/main.js"></script>
-    
-  </body>
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicial">Inicial</a></li>
+                <li><a href="#despesas">Despesas</a></li>
+                <li><a href="#investimentos">Investimentos</a></li>
+            </ul>
+        </nav>
+        <section id="currency-widget">
+            <!-- Conteúdo do widget de moedas -->
+        </section>
+    </header>
+    <main>
+        <section id="inicial" class="hide">
+            <!-- Conteúdo da seção inicial -->
+        </section>
+        <section id="despesas" class="hide">
+            <!-- Conteúdo da seção de despesas -->
+        </section>
+        <section id="investimentos" class="hide">
+            <!-- Conteúdo da seção de investimentos -->
+        </section>
+    </main>
+    <section id="weather-widget">
+        <!-- Conteúdo do widget de clima -->
+    </section>
+    <script src="./src/main.js"></script>
+</body>
+
 </html>

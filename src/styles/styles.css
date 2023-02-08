@@ -1,87 +1,95 @@
 /* Estilos Gerais */
 body {
-    background-color: #f2f2f2;
-    font-family: 'Open Sans', sans-serif;
-    color: #333;
-    padding: 20px;
-  }
-  
-  /* Estilo do Widget de Clima */
-  #weather-widget {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 200px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
-  }
-  
-  /* Estilo do Título */
-  #weather-widget h2 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
-  /* Estilo da Temperatura */
-  #weather-widget .temperature {
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
-  
-  /* Estilo da Descrição */
-  #weather-widget .description {
-    font-size: 0.8em;
-    color: #666;
-    margin-bottom: 10px;
-  }
-  
-  /* Estilo do Link */
-  #weather-widget a {
-    color: blue;
-    text-decoration: none;
-  }
-  #weather-widget a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Estilo do componente de finanças */
-  #finances-widget {
-    width: 100%;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
-  }
-  
-  /* Estilo do Título */
-  #finances-widget h2 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
-  /* Estilo dos inputs */
-  #finances-widget input[type="text"] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  /* Estilo dos botões */
-  #finances-widget input[type="submit"] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  #finances-widget input[type="submit"]:hover {
-    background-color: #45a049;
-  }
-  
+  background: linear-gradient(to bottom, aliceblue, mintcream);
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  padding: 20px;
+}
+
+/* Estilo do Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+/* Estilo da Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a.selected-item {
+  color: #6da5c5;
+  border-bottom: 2px solid #6da5c5;
+}
+
+/* Estilo do Widget de Clima */
+#weather-widget {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 200px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+/* Estilo do Título */
+#weather-widget h2 {
+font-size: 1.2em;
+margin-bottom: 10px;
+}
+
+/* Estilo da Temperatura */
+#weather-widget .temperature {
+font-size: 2em;
+margin-bottom: 10px;
+}
+
+/* Estilo da Descrição */
+#weather-widget .description {
+font-size: 0.8em;
+color: #666;
+margin-bottom: 10px;
+}
+
+/* Estilo do Link */
+#weather-widget a {
+color: blue;
+text-decoration: none;
+}
+#weather-widget a:hover {
+text-decoration: underline;
+}
+
+/* Estilo do componente de finanças */
+#finances-widget {
+width: 100%;
+padding: 20px;
+background-color: #fff;
+box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+/* Estilo das Seções */
+.section {
+display: none;
+}
+
+.section.selected {
+display: block;
+}
